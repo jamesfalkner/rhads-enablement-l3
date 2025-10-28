@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Experiment with an AI application locally using Podman AI Lab :: Red Hat Advanced Developer Suite - Level 3 Self-paced training</title>
-    <link rel="canonical" href="https://redhat-ads-tech.github.io/rhads-enablement-l3/modules/rhads-ai/rhads-ai-devtools/lab-ai-podman-rhads-ai.html">
-    <link rel="prev" href="lab-ai-devspaces-rhads-ai.html">
-    <link rel="next" href="../../end-to-end.html">
+    <title>AI Engineering: Streamline AI Agent Development with Red Hat Advanced Developer Suite Templates :: Red Hat Advanced Developer Suite - Level 3 Self-paced training</title>
+    <link rel="canonical" href="https://redhat-ads-tech.github.io/rhads-enablement-l3/modules/rhads-ai/rhads-ai-rhads/lab-ai-rhads-rhads-ai-dev-setup.html">
+    <link rel="prev" href="lab-ai-rhads-overview-rhads-ai.html">
+    <link rel="next" href="lab-ai-rhads-rhads-ai-dev.html">
     <meta name="generator" content="Antora 3.1.14">
     <link rel="stylesheet" href="../../../_/css/site.css">
 <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
@@ -262,31 +262,31 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../rhads-ai-rhads/lab-ai-rhads-overview-rhads-ai.html">Hands-on Lab</a>
+    <a class="nav-link" href="lab-ai-rhads-overview-rhads-ai.html">Hands-on Lab</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../rhads-ai-rhads/lab-ai-rhads-overview-rhads-ai.html#introduction">Hands-on Lab Overview</a>
+    <a class="nav-link" href="lab-ai-rhads-overview-rhads-ai.html#introduction">Hands-on Lab Overview</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="lab-ai-rhads-rhads-ai-dev-setup.html">Hands-on Lab: AI Engineering: Streamline AI Agent Development with Red Hat Advanced Developer Suite Templates</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../rhads-ai-rhads/lab-ai-rhads-rhads-ai-dev-setup.html">Hands-on Lab: AI Engineering: Streamline AI Agent Development with Red Hat Advanced Developer Suite Templates</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../rhads-ai-rhads/lab-ai-rhads-rhads-ai-dev.html">Hands-on Lab: AI Engineering: Implementing AI Agent Development with Red Hat Advanced Developer Suite</a>
+    <a class="nav-link" href="lab-ai-rhads-rhads-ai-dev.html">Hands-on Lab: AI Engineering: Implementing AI Agent Development with Red Hat Advanced Developer Suite</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="lab-intro-rhads-ai.html">Hands-on Lab on other developer tools</a>
+    <a class="nav-link" href="../rhads-ai-devtools/lab-intro-rhads-ai.html">Hands-on Lab on other developer tools</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="lab-intro-rhads-ai.html#introduction">Hands-on Lab Overview</a>
+    <a class="nav-link" href="../rhads-ai-devtools/lab-intro-rhads-ai.html#introduction">Hands-on Lab Overview</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="lab-ai-devspaces-rhads-ai.html">Hands-on Lab: Build an Agent with RHDH from OpenShift Dev Spaces</a>
+    <a class="nav-link" href="../rhads-ai-devtools/lab-ai-devspaces-rhads-ai.html">Hands-on Lab: Build an Agent with RHDH from OpenShift Dev Spaces</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="lab-ai-podman-rhads-ai.html">Hands-on Lab: Experiment with an AI application locally using Podman AI Lab</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../rhads-ai-devtools/lab-ai-podman-rhads-ai.html">Hands-on Lab: Experiment with an AI application locally using Podman AI Lab</a>
   </li>
 </ul>
   </li>
@@ -345,37 +345,19 @@
   <ul>
     <li><a href="../../index.html">Red Hat Advanced Developer Suite (RHADS) - Technical Workshop</a></li>
     <li><a href="../rhads-ai.html">Module 14: RHADS for AI Engineers</a></li>
-    <li><a href="lab-intro-rhads-ai.html">Hands-on Lab on other developer tools</a></li>
-    <li><a href="lab-ai-podman-rhads-ai.html">Hands-on Lab: Experiment with an AI application locally using Podman AI Lab</a></li>
+    <li><a href="lab-ai-rhads-overview-rhads-ai.html">Hands-on Lab</a></li>
+    <li><a href="lab-ai-rhads-rhads-ai-dev-setup.html">Hands-on Lab: AI Engineering: Streamline AI Agent Development with Red Hat Advanced Developer Suite Templates</a></li>
   </ul>
 </nav>
 </div>
   <div class="content">
 <article class="doc">
-<h1 class="page">Experiment with an AI application locally using Podman AI Lab</h1>
+<h1 class="page">AI Engineering: Streamline AI Agent Development with Red Hat Advanced Developer Suite Templates</h1>
 <div class="sect1">
-<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<h2 id="_objectives"><a class="anchor" href="#_objectives"></a>Objectives</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This lab requires Podman Desktop with the Podman AI Lab extension enabled.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Podman Desktop</strong>: Follow the official documentation: <a href="https://podman-desktop.io/downloads" target="_blank" rel="noopener">Podman Download</a></p>
-</li>
-<li>
-<p><strong>Podman AI Lab</strong>: Follow the installation guide: <a href="https://podman-desktop.io/docs/ai-lab/installing" target="_blank" rel="noopener">Podman AI Lab extension</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>In this lab, you will experiment with AI applications using Podman AI Lab. You will explore various AI applications and integrations, including Llama Stack.</p>
+<p>Using a pre-existing software template, you will create a new resource in Red Hat Developer Hub. This resource will serve as a blank template for your team to build an AI agent. You are leveraging the templates already setup with all necessary Kubernetes manifests, including the trusted software supply chain, deployments, and application promotion. In the next lab, your team will add their application source code to this new resource, integrating it into the software development lifecycle.</p>
 </div>
 </div>
 </div>
@@ -383,345 +365,672 @@
 <h2 id="_scenario"><a class="anchor" href="#_scenario"></a>Scenario</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You are part of the Python AI Development team. Your responsibility is to experiment with AI applications using Podman AI Lab before building an AI agent in an enterprise environment.</p>
+<p>You are part of the AI Engineering team and you will leverage the tools setup by the AI Platform Engineering team including best practices—aligned with your organization&#8217;s guidelines—for the AI team to build an AI agent in OpenShift.</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s get started.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_explore_podman"><a class="anchor" href="#_explore_podman"></a>Explore Podman</h2>
+<h2 id="_understanding_software_templates"><a class="anchor" href="#_understanding_software_templates"></a>Understanding software templates</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Open <strong>Podman Desktop</strong>.</p>
-</li>
-<li>
-<p>Click <strong>Podman AI Lab</strong>. Your screen should look similar to this:</p>
 <div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/podman-screen.png" alt="podman screen" width="30%"></span></p>
-</div>
-</li>
-</ul>
+<p>Software templates can build, deploy, and promote any application that runs in a container or as a Kubernetes component. They ensure development teams start with established best practices and organizational guidelines, putting guardrails and compliance in place before the application ever runs on the cluster.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_set_up_and_explore_ai_tools"><a class="anchor" href="#_set_up_and_explore_ai_tools"></a>Set up and explore AI tools</h2>
+<h2 id="_about_pre_defined_software_templates"><a class="anchor" href="#_about_pre_defined_software_templates"></a>About pre-defined software templates</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Pre-defined software templates are included with the RHADS installation. They provide recipes users can leverage to start bringing applications into OpenShift. These templates offer a starting point and reference for building applications using the Trusted Software Supply Chain (TSSC). They are not intended for production use; customers can add their own configurations on top of these templates by following the <a href="https://docs.redhat.com/en/documentation/red_hat_trusted_application_pipeline/latest/html/customizing_red_hat_trusted_application_pipeline/index" target="_blank" rel="noopener">Customizing Red Hat Trusted Application Pipeline documentation</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_create_the_component"><a class="anchor" href="#_create_the_component"></a>Create the component</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Let&#8217;s create a new component from the pre-existing Software Template in Red Hat Developer Hub.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click on <strong>catalog</strong>:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/rhdh-catalogicon.png" alt="rhdh catalogicon" width="30%"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Next, click on <strong>Self-service</strong>:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/rhdh-selfservice.png" alt="rhdh selfservice" width="30%"></span></p>
+</div>
+<div class="paragraph">
+<p>Then select the software template: Python - Trusted Application Pipeline</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click on <strong>Choose</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/rhdh-catalog-python.png" alt="rhdh catalog python" width="60%"></span></p>
+</div>
+<div class="paragraph">
+<p>Follow the steps to create the component in Red Hat Developer Hub, adding the following input data for each section.</p>
+</div>
 <div class="sect2">
-<h3 id="_select_an_ai_model"><a class="anchor" href="#_select_an_ai_model"></a>Select an AI Model</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Click <strong>Models</strong> &#8594; <strong>Catalog</strong></p>
-</li>
-</ul>
-</div>
+<h3 id="_application_information"><a class="anchor" href="#_application_information"></a>Application Information</h3>
 <div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/podman-model-catalog.png" alt="podman model catalog" width="30%"></span></p>
+<p>Enter the following data:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Select and <strong>download</strong> the model: <strong>ibm-granite/granite-3.3-8b-instruct-GGUF</strong></p>
+<p><strong>Name: ai-agent</strong></p>
+</li>
+<li>
+<p><strong>Owner: Select the user: user1 from the dropdown:</strong></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/podman-download-model.png" alt="podman download model" width="100%"></span></p>
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/rhdh-python-user.png" alt="rhdh python user" width="60%"></span></p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Once finished, check the <strong>Downloads</strong> tab.</p>
+<p><strong>Click on *Next</strong></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/model-downloaded.png" alt="model downloaded" width="100%"></span></p>
-</div>
-<div class="paragraph">
-<p>Now you can create a service to allow applications to consume the model easily.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_create_a_model_service"><a class="anchor" href="#_create_a_model_service"></a>Create a model service</h3>
-<div class="paragraph">
-<p>Podman AI Lab allows you to create model services and playgrounds to build AI applications.
-The model service is used for inference, allowing AI applications to consume it via HTTP.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/podman-serving-playgrounds.png" alt="podman serving playgrounds" width="100%"></span></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Click Models &#8594; Services</p>
-</li>
-<li>
-<p>Click <strong>New Model Service</strong></p>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/new-model-service.png" alt="new model service" width="100%"></span></p>
-</div>
-</li>
-<li>
-<p>Review the information,  then click <strong>Create Service</strong></p>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/create-model-service.png" alt="create model service" width="100%"></span></p>
-</div>
-</li>
-<li>
-<p>When the model service is ready, click the <strong>start</strong> icon.</p>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/model-service-start.png" alt="model service start" width="100%"></span></p>
-</div>
-</li>
-<li>
-<p>The service is now started and ready to be consumed:</p>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/model-service-started.png" alt="model service started" width="100%"></span></p>
-</div>
-</li>
-</ul>
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/rhdh-python.png" alt="rhdh python" width="100%"></span></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_explore_llama_stack"><a class="anchor" href="#_explore_llama_stack"></a>Explore LLama Stack</h3>
+<h3 id="_application_repository_information"><a class="anchor" href="#_application_repository_information"></a>Application Repository Information</h3>
+<div class="paragraph">
+<p>Change only the following fields:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>Select <strong>Llama Stack</strong> from <strong>Podman AI Lab</strong></p>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/podman-llamastack.png" alt="podman llamastack" width="40%"></span></p>
-</div>
-</li>
-<li>
-<p>Select <strong>Start Llama Stack container</strong>:</p>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/llama-stack-start.png" alt="llama stack start" width="100%"></span></p>
-</div>
-</li>
-<li>
-<p>Llama Stack will begin building the container. Once finished, all steps will appear in green.</p>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/llama-stack-running-container.png" alt="llama stack running container" width="100%"></span></p>
-</div>
-</li>
-<li>
-<p>Click <strong>Explore Llama-Stack Environment</strong></p>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/llama-stack-explore.png" alt="Podman LLama Stack Explore"></span></p>
-</div>
-</li>
-<li>
-<p>Explore the <strong>Llama Stack UI</strong> and enter the question, <strong>"What is an AI agent"</strong> in the chat box:</p>
+<p><strong>Host Type: GitLab</strong></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/llama-stack-chat.png" alt="LLama Stack UI"></span></p>
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/rhdh-gitselection.png" alt="rhdh gitselection" width="30%"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Repository Name: ai-agent</strong></p>
+</li>
+<li>
+<p><strong>Repository Owner: rhdh</strong></p>
+</li>
+<li>
+<p><strong>Repository Server: gitlab-gitlab.{openshift_cluster_ingress_domain}</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Your screen should look similar to this:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/rhdh-python2.png" alt="rhdh python2" width="100%"></span></p>
+</div>
+<div class="paragraph">
+<p>Keep Repository Default Branch and CI Provider with the default values.</p>
+</div>
+<div class="paragraph">
+<p><strong>Note:</strong> The GitLab URL may differ, as the cluster domain will vary.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click on <strong>Next</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_deployment_information"><a class="anchor" href="#_deployment_information"></a>Deployment Information</h3>
+<div class="paragraph">
+<p>Change only the following inputs:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Image Registry: quay-my-guid.{openshift_cluster_ingress_domain}</strong></p>
+</li>
+<li>
+<p><strong>Image Organization: tssc</strong></p>
+</li>
+<li>
+<p><strong>Image Name: ai-agent</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Your screen should look similar to this:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/rhdh-python3.png" alt="rhdh python3" width="100%"></span></p>
+</div>
+<div class="paragraph">
+<p>Keep Deployment Namespace with the default value.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_click_on_review"><a class="anchor" href="#_click_on_review"></a>Click on Review</h3>
+<div class="paragraph">
+<p>Your screen should look similar to this:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/rhdh-python4.png" alt="rhdh python4" width="100%"></span></p>
+</div>
+<div class="paragraph">
+<p>Ensure your information matches the image, except for the cluster domain.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_click_on_the_create_button"><a class="anchor" href="#_click_on_the_create_button"></a>Click on the Create button</h3>
+<div class="paragraph">
+<p>Red Hat Developer Hub will run the tasks defined in the <strong>template.yaml</strong> file and other manifests. Once finished, all steps will appear in green.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/rhdh-python5.png" alt="rhdh python5" width="100%"></span></p>
+</div>
+<div class="paragraph">
+<p>Next, you will explore the application source code.</p>
+</div>
+<div class="paragraph">
+<p><strong>Congratulations!</strong> You now have a resource available for the AI team to start building their application.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_use_the_podman_ai_lab_recipe_to_build_a_chatbot"><a class="anchor" href="#_use_the_podman_ai_lab_recipe_to_build_a_chatbot"></a>Use the Podman AI Lab recipe to build a chatbot</h2>
+<h2 id="_exploring_the_software_template"><a class="anchor" href="#_exploring_the_software_template"></a>Exploring the software template</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Podman AI Lab provides many recipes you can use as a starting point to build your own applications, explore AI tools, or learn about AI Lab.</p>
+<p>In this section, you will review what was created and learn how to understand these configurations.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/anatomy-recipe.png" alt="anatomy recipe" width="100%"></span></p>
+<p>Two repositories were created, both required to build and deploy the application:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Click <strong>Recipe Catalog</strong>.</p>
+<p><strong>Source Repository</strong>: Contains pipelines that validate pull requests, ensuring image updates are safe before promoting applications to the next environment (e.g., from staging to production).</p>
+</li>
+<li>
+<p><strong>GitOps Repository</strong>: Represents the AI application, which currently contains only a sample app. AI Engineers will use this repository to add the AI Agent.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/recipe-click.png" alt="recipe click" width="30%"></span></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Explore the different recipes available <strong>Recipe Catalog</strong> and select the <strong>ChatBot using Llama Stack</strong> by clicking on <strong>More Details</strong></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/podman-recipe-list.png" alt="podman recipe list" width="100%"></span></p>
-</div>
-<div class="paragraph">
-<p><strong>Take time to explore the recipe.</strong></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Click the <strong>start</strong> icon.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/chatbot-start.png" alt="chatbot start" width="100%"></span></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Click <strong>Start chatbot recipe</strong> to build the chatbot.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/start-recipe.png" alt="start recipe" width="100%"></span></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The process will take a few seconds:</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/podman-recipe-starting.png" alt="podman recipe starting" width="100%"></span></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Once the chatbot is ready, Click <strong>Open Details</strong></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/chatbot-ready.png" alt="chatbot ready" width="90%"></span></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>To explore the chatbot, click the <strong>Open AI App</strong> icon.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/open-chatbot.png" alt="open chatbot" width="100%"></span></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Next, explore and test the chatbot.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/chatbot-running.png" alt="chatbot running" width="100%"></span></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Congratulations, you have built an AI chatbot integrated with LLama Stack using Podman AI Lab.</strong></p>
-</li>
-<li>
-<p>Next, review the source code.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>In Podman AI Lab, click <strong>AI APPS</strong> &#8594; <strong>Running</strong></p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/ailab-running.png" alt="ailab running" width="40%"></span></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Then, click <strong>Open Recipe</strong></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/chatbot-recipe.png" alt="chatbot recipe" width="90%"></span></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Review the <strong>Summary</strong> section.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/ailab-chatbot-summary.png" alt="ailab chatbot summary" width="100%"></span></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>In the <strong>Repository</strong> section, click <strong>containers/ai-lab-recipe</strong></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/open-repository.png" alt="open repository" width="80%"></span></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Confirm to <strong>open external website</strong></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/open-external-website.png" alt="open external website" width="80%"></span></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The GitHub repository includes all the recipes displayed in Podman AI Lab: <a href="https://github.com/containers/ai-lab-recipes" target="_blank" rel="noopener">ai-lab-recipes</a>.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../../_images/rhads-ai/local-lab/ailab-recipes.png" alt="ailab recipes" width="80%"></span></p>
+<p>Learn more about these templates at <a href="https://docs.redhat.com/en/documentation/red_hat_trusted_application_pipeline/latest/html/customizing_red_hat_trusted_application_pipeline/customizing-sample-pipelines_default" target="_blank" rel="noopener">Customizing Sample Pipelines</a>.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_conclusion"><a class="anchor" href="#_conclusion"></a>Conclusion</h2>
+<h2 id="_adding_more_configurations"><a class="anchor" href="#_adding_more_configurations"></a>Adding more configurations</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Podman AI Lab</strong> is a great resource for experimenting with AI applications, from learning from recipes, testing locally and try different models.</p>
+<p>You have received new requests from the AI Engineering team:</p>
 </div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Update the <strong>dev.yaml</strong> file with application configurations.</p>
+</li>
+<li>
+<p>Integrate Red Hat Developer Hub with <strong>Red Hat OpenShift Dev Spaces</strong>.</p>
+</li>
+<li>
+<p>Configure the application to use <strong>environment variables</strong> to connect to an AI model and an API.</p>
+</li>
+<li>
+<p>Create a <strong>GitLab webhook</strong> to trigger the OpenShift Pipelines.</p>
+</li>
+</ol>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_next"><a class="anchor" href="#_next"></a>Next</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>Next, you will learn how to build AI applications like an AI agent in an enterprise environment. This environment must include best practices, starting with security and following organizational guidelines in OpenShift.</p>
+<p>Typically, Platform Engineers manage custom configurations by updating the source software templates. In this case, however, you will apply these configurations directly to your newly created component since we are leveraging a pre-existing template.</p>
 </div>
+<div class="paragraph">
+<p>Let&#8217;s work on these requests!</p>
 </div>
+<div class="sect2">
+<h3 id="_1_update_the_dev_yaml_file"><a class="anchor" href="#_1_update_the_dev_yaml_file"></a>1- Update the dev.yaml file</h3>
+<div class="paragraph">
+<p>In this section, you will replace the <strong>whole content</strong> of the dev.yaml file.</p>
 </div>
-<div class="sect1">
-<h2 id="_resources"><a class="anchor" href="#_resources"></a>Resources</h2>
-<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://podman-desktop.io/docs/ai-lab" target="_blank" rel="noopener">Podman AI Lab</a></p>
+<p>Go to the <strong>GitLab source code</strong> repository:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>On the same screen, click on <strong>Source Repository</strong></p>
 </li>
 <li>
-<p><a href="https://developers.redhat.com/learn/rhel/build-your-ai-application-ai-lab-extension-podman-desktop" target="_blank" rel="noopener">Build your AI application with an AI Lab extension in Podman Desktop</a></p>
+<p>Or  use the following URL, <a href="{gitlab_url}/rhdh/ai-agent" target="_blank" rel="noopener">GitLab AI Agent</a>.</p>
 </li>
 </ul>
+</div>
+</li>
+<li>
+<p>Log in to GitLab using your credentials:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Click on <strong>Sign in</strong>:</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/gitlab-sign-in.png" alt="gitlab sign in" width="100%"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Username</strong>: {gitlab_user}</p>
+</li>
+<li>
+<p><strong>Password</strong>: {gitlab_user_password}</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Click the <strong>dev.yaml file</strong> in the project&#8217;s root directory.</p>
+</li>
+<li>
+<p>Click on <strong>Edit</strong>, then <strong>Edit Single File</strong></p>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/gitlab-open.png" alt="gitlab open" width="100%"></span></p>
+</div>
+</li>
+<li>
+<p>Copy the content provided by clicking the icon:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/rhdh-copy-icon.png" alt="rhdh copy icon" width="20%"></span></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock execute">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">schemaVersion: 2.2.2
+metadata:
+  name: ai-agent
+  displayName: "AI Research Agent"
+  description: "Web-based AI research agent with search capabilities"
+components:
+  - name: python
+    container:
+      image: registry.redhat.io/devspaces/udi-rhel9:3.23
+      volumeMounts:
+        - name: venv
+          path: /home/user/.venv
+      memoryLimit: '2Gi'
+      memoryRequest: '1Gi'
+      cpuLimit: '2'
+      cpuRequest: '1'
+      mountSources: true
+      env:
+        - name: FLASK_ENV
+          value: development
+        - name: FLASK_DEBUG
+          value: "1"
+  - name: venv
+    volume:
+      size: 1G
+commands:
+  - id: install
+    exec:
+      label: "Install Dependencies"
+      component: python
+      workingDir: ${PROJECTS_ROOT}/ai-agent
+      commandLine: python -m venv .venv &amp;&amp; . .venv/bin/activate &amp;&amp; pip install -r requirements.txt
+      group:
+        kind: build
+  - id: run
+    exec:
+      label: "Run AI Agent Server"
+      component: python
+      workingDir: ${PROJECTS_ROOT}/ai-agent
+      commandLine: . .venv/bin/activate &amp;&amp; gunicorn --bind 0.0.0.0:8080 --workers 2 --threads 4 --reload app:app
+      group:
+        kind: run
+  - id: dev
+    exec:
+      label: "Run Development Server"
+      component: python
+      workingDir: ${PROJECTS_ROOT}/ai-agent
+      commandLine: . .venv/bin/activate &amp;&amp; python app.py
+      group:
+        kind: run
+  - id: health
+    exec:
+      label: "Health Check"
+      component: python
+      workingDir: ${PROJECTS_ROOT}/ai-agent
+      commandLine: curl -f http://localhost:8080/health || echo "Service not ready"
+      group:
+        kind: test</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Paste it into the file <strong>REPLACING THE WHOLE CONTENT</strong></p>
+</li>
+<li>
+<p>Commit your changes:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/gitlab-commit.png" alt="gitlab commit" width="60%"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_integrating_red_hat_openshift_dev_spaces"><a class="anchor" href="#_integrating_red_hat_openshift_dev_spaces"></a>Integrating Red Hat OpenShift Dev Spaces</h3>
+<div class="paragraph">
+<p>Next, you will integrate Red Hat OpenShift Dev Spaces. You will add a link to the component&#8217;s overview UI. To accomplish this task, you will add the information to the the <strong>catalog-info.yaml</strong> file.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Go back to the project&#8217;s root folder and find the <strong>catalog-info.yaml file</strong>:</p>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/gitlab-catalog.png" alt="gitlab catalog" width="60%"></span></p>
+</div>
+</li>
+<li>
+<p>Click the file</p>
+</li>
+<li>
+<p>Click <strong>Edit</strong>, then <strong>Edit Single File</strong></p>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/gitlab-open.png" alt="gitlab open" width="100%"></span></p>
+</div>
+</li>
+<li>
+<p>Copy the following code:</p>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/rhdh-copy-icon.png" alt="rhdh copy icon" width="20%"></span></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock execute">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">    - url: https://devspaces.{openshift_cluster_ingress_domain}/dashboard/#https://gitlab-gitlab.{openshift_cluster_ingress_domain}/rhdh/ai-agent
+      title: RH OpenShift Dev Spaces
+      icon: dashboard
+      type: admin-dashboard</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Paste it at line 11, <strong>without replacing the existing content</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Your file should look similar to this, although the cluster domain will be different:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/ai-agent-catalog-info.png" alt="ai agent catalog info" width="100%"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Commit your changes:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/gitlab-commit.png" alt="gitlab commit" width="60%"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Verify the link was added to the component:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Go back to {rhdh_url}/catalog/default/component/ai-agent/[Red Hat Developer Hub UI - AI Agent^]</p>
+</li>
+<li>
+<p>You should see a new link in the component&#8217;s overview:</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/rhdh-devspaces-click.png" alt="rhdh devspaces click" width="100%"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Note:</strong>  Do not click the link. You will use Red Hat OpenShift Dev Spaces in the next lab as an AI Engineer.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_the_webhook"><a class="anchor" href="#_create_the_webhook"></a>Create the webhook</h3>
+<div class="paragraph">
+<p>Webhooks are not part of the pre-defined software templates, but they are required to trigger pipelines when the source code changes. Now, create a webhook in the source code repository in GitLab.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Go to the source code repository or access it directly: <a href="{gitlab_url}/rhdh/ai-agent" target="_blank" rel="noopener">GitLab AI Agent</a></p>
+</li>
+<li>
+<p>Click <strong>Settings &gt; Webhooks</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/gitlab-webhook.png" alt="gitlab webhook" width="80%"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click <strong>Add new webhook</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/gitlab-webhook-new.png" alt="gitlab webhook new" width="100%"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Copy the URL and paste it in the URL field.</p>
+<div class="listingblock execute">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">https://pipelines-as-code-controller-openshift-pipelines.{openshift_cluster_ingress_domain}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>In the <strong>Trigger</strong> section, select the following:</p>
+</li>
+<li>
+<p>Push events</p>
+</li>
+<li>
+<p>Tag Push events</p>
+</li>
+<li>
+<p>Comments</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/gitlab-webhook-config.png" alt="gitlab webhook config" width="100%"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Scroll to the bottom and click <strong>Add webhook</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/gitlab-add-webhook.png" alt="gitlab add webhook" width="100%"></span></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Next, you will test the webhook from this screen to ensure it works.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_test_the_webhook"><a class="anchor" href="#_test_the_webhook"></a>Test the webhook</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>On the <strong>Webhooks</strong> screen, click <strong>Test</strong> and select <strong>Push events</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/gitlab-webhook-test.png" alt="gitlab webhook test" width="100%"></span></p>
+</div>
+</li>
+<li>
+<p>This will trigger the pipeline.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_explore_the_pipeline"><a class="anchor" href="#_explore_the_pipeline"></a>Explore the Pipeline</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Go back to {rhdh_url}/catalog/default/component/ai-agent/[Red Hat Developer Hub UI - AI Agent^]</p>
+</li>
+<li>
+<p>Click the <strong>CI</strong> tab.</p>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/rhads-tssc.png" alt="rhads tssc" width="100%"></span></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Note:</strong> The pipeline will take a few minutes to complete all steps.</p>
+</div>
+<div class="paragraph">
+<p>The AI agent will be built using the Trusted Software Supply Chain (TSSC) provided by Red Hat Advanced Developer Suite. This ensures all security best practices and organizational guardrails are in place <strong>before</strong> development begins. As a best practice, this applies a shift-left security approach to all development.</p>
+</div>
+<div class="paragraph">
+<p>The TSSC pipeline uses OpenShift Pipelines to build a container image, generate an SBOM, and push both to Red Hat Quay. Subsequent tasks use the Red Hat Advanced Cluster Security (ACS) <strong>roxctl</strong> CLI: <strong>acs-image-check</strong> verifies the image signature against security policies, and <strong>acs-image-scan</strong> identifies vulnerabilities. Red Hat Quay acts as the secure registry, storing the signed images, SBOMs, and metadata.</p>
+</div>
+<div class="paragraph">
+<p>To learn more, review the <a href="../../production-rhdh/tssc-rhdh.html" class="xref page">Module 10: RHADS End-to-End: Production-Ready Development Lifecycle</a> module.</p>
+</div>
+<div class="paragraph">
+<p><strong>Note:</strong> If you face a 500 error during the build container image step, restart the <strong>quay-quay-app.</strong> pods (2 pods) in the <strong>quay-enterprise</strong> namespace.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_add_environment_variables"><a class="anchor" href="#_add_environment_variables"></a>Add environment variables</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Go to the AI Agent GitOps repository&#8217;s <strong>deployment.yaml</strong>: <a href="{gitlab_url}/rhdh/ai-agent-gitops/-/blob/main/components/ai-agent/base/deployment.yaml" target="_blank" rel="noopener">ai-agent-gitops deployment.yaml</a>.</p>
+</li>
+<li>
+<p>Click <strong>Edit</strong>, then <strong>Edit Single File</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/gitlab-open.png" alt="gitlab open" width="100%"></span></p>
+</div>
+</li>
+<li>
+<p>At line 52, paste the new code. This adds integrations for LLM models (name, URL, API key) and the Tavily API, which will be used as an AI Agent tool. <strong>Ensure you are not replacing the current content.</strong></p>
+</li>
+</ul>
+</div>
+<div class="listingblock execute">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">        - name: MODEL_NAME
+          valueFrom:
+            secretKeyRef:
+              name: ai-agent-secrets-llm
+              key: MODEL_NAME
+        - name: LLM_API_BASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: ai-agent-secrets-llm
+              key: LLM_API_BASE_URL
+        - name: TAVILY_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: ai-agent-secrets-tavily
+              key: TAVILY_API_KEY
+        - name: LLM_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: ai-agent-secrets-llm
+              key: LLM_API_KEY</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Your file should look like this. <strong>Ensure the indentation is correct</strong>:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/ai-agent-deployment.png" alt="ai agent deployment" width="100%"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Commit your changes:</p>
+<div class="paragraph">
+<p><span class="image"><img src="../../_images/rhads-ai/rhads/gitlab-commit.png" alt="gitlab commit" width="60%"></span></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Note:</strong> In the next lab, the developer will create the secret with the keys. This is not a recommended practice, but it is done for this lab to avoid sharing private keys in a public repository.</p>
+</div>
+<div class="paragraph">
+<p>Great job! You have successfully built the tools for the AI Engineering team to start building the AI Agent.</p>
+</div>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="lab-ai-devspaces-rhads-ai.html" class="query-params-link">Hands-on Lab: Build an Agent with RHDH from OpenShift Dev Spaces</a></span>
-  <span class="next"><a href="../../end-to-end.html" class="query-params-link">Module 15: RHADS Complete: Summary and Next Steps</a></span>
+  <span class="prev"><a href="lab-ai-rhads-overview-rhads-ai.html" class="query-params-link">Hands-on Lab</a></span>
+  <span class="next"><a href="lab-ai-rhads-rhads-ai-dev.html" class="query-params-link">Hands-on Lab: AI Engineering: Implementing AI Agent Development with Red Hat Advanced Developer Suite</a></span>
 </nav>
 </article>
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
