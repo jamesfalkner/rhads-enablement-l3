@@ -161,7 +161,37 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../security-practices.html">Module 7: Getting started with security best practices</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../security-practices/overview.html">Module 7: Getting started with security best practices</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../security-practices/overview.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../security-practices/security-practices.html">Foundations and Frameworks</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../security-practices/understanding-keyless.html">Understanding Keyless Signing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../security-practices/exercises.html">Exercises</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../security-practices/ex1-signing-images.html">Image Signing &amp; Verification</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../security-practices/ex2-git-signing.html">Commit Signing &amp; Verification</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../security-practices/ex3-provenance.html">Provenance &amp; Attestations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../security-practices/ex4-sboms.html">SBOM Creation</a>
+  </li>
+</ul>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../tssc-tpa.html">Module 8: Trusted Software Supply Chain with TPA</a>
@@ -545,7 +575,7 @@
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Occasionally you may see an issue where the Quay repository has expired the logon, especially if you leave the lab open for a long while; if the pipeline fails at this point, simply go to the {quay_url}[Quay Console] and login again using the <code>{quay_admin_user}</code> username and the password: <code>{quay_admin_password}</code>. This will re-set the expiration of the access token, and your next commit and pipeline run will be successful later on in this exercise, so just ignore the error for now.</p>
+<p>Occasionally you may see an issue where the Quay repository has expired the logon, especially if you leave the lab open for a long while; if the pipeline fails at this point, simply go to the {quay_url}[Quay Console^] and login again using the <code>{quay_admin_user}</code> username and the password: <code>{quay_admin_password}</code>. This will re-set the expiration of the access token, and your next commit and pipeline run will be successful later on in this exercise, so just ignore the error for now.</p>
 </div>
 </td>
 </tr>
