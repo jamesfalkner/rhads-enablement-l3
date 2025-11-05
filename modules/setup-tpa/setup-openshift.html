@@ -27,6 +27,7 @@
           <a class="navbar-link" href="#">Links</a>
           <div class="navbar-dropdown navbar-dropdown-right">
             <a class="navbar-item navbar-item-right-content" href="https://redhat.com" target="_blank">Red Hat</a>
+            <a class="navbar-item navbar-item-right-content" href="env.html" target="_blank">Lab</a>
           </div>
         </div>
       </div>
@@ -194,7 +195,28 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../tssc-tpa.html">Module 8: Trusted Software Supply Chain with TPA</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tssc-tpa/tssc-tpa.html">Module 8: Trusted Software Supply Chain with TPA</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../tssc-tpa/correlation.html">Data Types &amp; Correlation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tssc-tpa/exercises.html">Exercises</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tssc-tpa/ex1-uploading-sboms.html">Exercise: Uploading Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tssc-tpa/ex2-ui-usecases.html">Exercise: Exploring the Security Posture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tssc-tpa/ex3-licenses.html">Exercise: (Open Source) License Compliance</a>
+  </li>
+</ul>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../tssc-tas.html">Module 9: Attestations, Tekton Chains &amp; Enterprise Contract with TAS</a>
@@ -324,6 +346,13 @@
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../end-to-end.html">Module 15: RHADS Complete: Summary and Next Steps</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../env.html">My lab environment details</a>
   </li>
 </ul>
   </li>
@@ -886,7 +915,7 @@ In the next step, make sure you toggle the <strong>Include in token scope</stron
 <p><span class="image"><img src="../_images/m3-tpa-openshift/keycloak-users-edit.png" alt="keycloak users edit"></span></p>
 </div>
 <div class="paragraph">
-<p>Click on the <em>Role Mapping</em> tab (4) and then <em>Assign Role</em> (5) and assign the <code>tpa-users</code> role to <code>user1</code>:</p>
+<p>Click on the <em>Role Mapping</em> tab (4) and then <em>Assign Role</em> (5) and assign the <code>tpa-user</code> role to <code>user1</code>:</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="../_images/m3-tpa-openshift/keycloak-users-assign-role.png" alt="keycloak users assign role"></span>
@@ -908,7 +937,7 @@ In the next step, make sure you toggle the <strong>Include in token scope</stron
 <p><strong>Clients</strong></p>
 </div>
 <div class="paragraph">
-<p>Now that we have the client scopes, have assigned these to new roles that we created and assigned those roles to users&#8230;&#8203; we need the clients that provide us with the authentication endpoints for TPA:</p>
+<p>Now that we have the client scopes, have assigned these to new roles that we created and assigned those roles to users, we need the clients that provide us with the authentication endpoints for TPA:</p>
 </div>
 <div class="paragraph">
 <p>In the same realm (1), go to <em>Clients</em> (2). Here, you could create the clients manually and configure them (especially the client scopes that we need associated with this client) - but we have created import files for you, so you can instead use <em>Import Client</em> (3).</p>
