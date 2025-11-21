@@ -127,13 +127,19 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../customize-rhdh.html">Module 5: Customize Red Hat Developer Hub</a>
+    <a class="nav-link" href="../rhdh-ui/foundations.html">Module 5: Red Hat Developer Hub User Interface</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../customize-rhdh.html">Foundations</a>
+    <a class="nav-link" href="../rhdh-ui/foundations.html">Foundations</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../customize-rhdh.html#_lab">Hands-on Lab</a>
+    <a class="nav-link" href="../rhdh-ui/customize-rhdh.html">Hands-on Lab: Customize RHDH Appearance</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../rhdh-ui/techdocs-foundations.html">TechDocs Foundations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../rhdh-ui/techdocs-lab-user.html">TechDocs Lab 1: Creating and Editing TechDocs</a>
   </li>
 </ul>
   </li>
@@ -219,7 +225,46 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../tssc-tas.html">Module 9: Attestations, Tekton Chains &amp; Enterprise Contract with TAS</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tssc-tas/tssc-tas.html">Module 9: Attestations, Tekton Chains &amp; Enterprise Contract with TAS</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tssc-tas/exercises.html">Exercises</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tssc-tas/ex1-chains.html">Tekton Chains</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tssc-tas/ex2-enterprise-contract.html">Conforma and Rego policies</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../tssc-tas/ex3-sigstore-controller.html">Sigstore Admission Controller</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tssc-tas/ex3.1-sigstore-prep.html">Preparation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tssc-tas/ex3.2-sigstore-install.html">Installation</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tssc-tas/ex3.3-sigstore-config.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tssc-tas/ex3.4-sigstore-cip.html">ClusterImagePolicies</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tssc-tas/ex4-acs-controller.html">RHACS Admission Controller</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tssc-tas/ex-controller-summary.html">Admission Controllers Summary</a>
+  </li>
+</ul>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
@@ -1283,7 +1328,7 @@ The operator is currently in tech preview and has some issues handling multiple 
 <p>And, while you still have it in your clipboard, also for the <code>spec.storage.region</code>:</p>
 </div>
 <div class="paragraph">
-<p><code>region: <a href="https://s3-openshift-storage.{openshift_cluster_ingress_domain}:443" class="bare">https://s3-openshift-storage.{openshift_cluster_ingress_domain}:443</a></code></p>
+<p><code>region: https://s3-openshift-storage.{openshift_cluster_ingress_domain}:443</code></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1372,6 +1417,18 @@ Bucket Name:         trustify-c443fd04-cc20-4455-ac54-f02921669428 (Yours will b
 </div>
 <div class="paragraph">
 <p>However, if you go to the <a href="https://console-openshift-console.{openshift_cluster_ingress_domain}/k8s/ns/student-tpa-operator/deployments" target="console">Deployments Page</a>, you can see the importer and server deployments with 1/1 pods.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This may take a while and they even might fail first, before they are healthily up and running as shown below.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="../_images/m3-tpa-openshift/operator-tpa-failed-deployment.png" alt="operator tpa failed deployment"></span></p>
@@ -1630,9 +1687,24 @@ ls -al</code></pre>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Set <code>storage.region</code> to <code><a href="https://s3-openshift-storage.{openshift_cluster_ingress_domain}:443" class="bare">https://s3-openshift-storage.{openshift_cluster_ingress_domain}:443</a></code>
-`</p>
+<p>Set <code>storage.region</code> to <code>https://s3-openshift-storage.{openshift_cluster_ingress_domain}:443</code></p>
 </li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Make sure you copied and ran the above commands, as that makes sure you&#8217;re creating all the artifacts and you get the correct bucket name when running the <code>s3.sh</code> script.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>In <code>storage.bucket</code>, paste the value for the <code>trustify</code> bucket that we just got as output from the <code>s3.sh</code> script.</p>
 <div class="paragraph">
@@ -1640,7 +1712,7 @@ ls -al</code></pre>
 </div>
 </li>
 <li>
-<p>Set <code>oidc.issuerUrl</code> to <a href="https://sso.{openshift_cluster_ingress_domain}/realms/trusted-artifact-signer`" class="bare">https://sso.{openshift_cluster_ingress_domain}/realms/trusted-artifact-signer`</a></p>
+<p>Set <code>oidc.issuerUrl</code> to <code>https://sso.{openshift_cluster_ingress_domain}/realms/trusted-artifact-signer</code></p>
 <div class="admonitionblock note">
 <table>
 <tr>
